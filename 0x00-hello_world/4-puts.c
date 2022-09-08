@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
-* main - Function to print with puts
-* Description: Finction that prints and returns 0
-* @returns: returns 0
+* main - Entry point
+* Return: always 0
 */
 int main(void)
 {
