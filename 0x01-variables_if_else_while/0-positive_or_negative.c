@@ -1,11 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
 /**
- * betty style doc for function main goes there
- * Description: Printing about this number
+ * main - Get the state of random number Entry point
+ *
+ * Description:  Printing about this number.
+ * with beginning and ending almost-blank lines.
  */
 int main(void)
 {
