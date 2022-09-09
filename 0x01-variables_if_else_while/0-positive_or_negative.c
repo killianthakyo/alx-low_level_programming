@@ -3,10 +3,11 @@
 #include <stdio.h>
 
 /**
- * main - Get the state of random number Entry point
+ * main-entry point for the program.
  *
  * Description:  Printing about this number.
- * with beginning and ending almost-blank lines.
+ *
+ * Return: 0.
  */
 int main(void)
 {
