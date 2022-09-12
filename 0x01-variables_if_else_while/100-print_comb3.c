@@ -5,7 +5,7 @@
 /**
  * main-entry point for the program.
  *
- * Description:  Print allbase 16 in lowercase.
+ * Description:  Print 2 digit combinations.
  * Return: 0.
  */
 int main(void)
