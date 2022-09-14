@@ -2,12 +2,13 @@
 #include "main.h"
 
 /**
- * main-entry point for the program.
+ * main - entry point for the program.
  *
  * Description:  Print _alphabets in lowercase.
  *
- * Return: 0.
+ * Return: No return value
  */
+
 void print_alphabet(void)
 {
 	char i = 'a';
