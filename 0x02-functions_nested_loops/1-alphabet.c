@@ -4,9 +4,8 @@
 /**
  * main - entry point for the program.
  *
- * Description:  Print _alphabets in lowercase.
  *
- * Return: No return value
+ * Return: void
  */
 
 void print_alphabet(void)
