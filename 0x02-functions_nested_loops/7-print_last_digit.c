@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-#include <ctype.h>
 #include <stdlib.h>
 
 /**
@@ -13,6 +12,13 @@
 int print_last_digit(int c)
 {
 	int ret = c % 10;
+
+	if (ret < 0)
+	{
+		ret = (-1 * ret);
+	}
+
+	_putchar(ret + '0');
 
 	return (ret);
 }
