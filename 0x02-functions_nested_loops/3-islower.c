@@ -5,17 +5,21 @@
 /**
  * _islower - entry point for the program.
  *
+ * @c : character passed as c.
+ *
  * Return: void
  */
 int _islower(int c)
 {
-	int ret; 
+	int ret;
+
 	if (islower(c))
 	{
 		ret = 1;
-	} else 
+	}
+	else
 	{
-		ret =0;
+		ret = 0;
 	}
 	return (ret);
 }
