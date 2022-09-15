@@ -1,9 +1,8 @@
-#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
- * main - entry point for the program.
- *
+ * print_alphabet - entry point for the program.
  *
  * Return: void
  */
@@ -17,4 +16,5 @@ void print_alphabet(void)
 		i++;
 	}
 	_putchar(10);
+	return (0);
 }
