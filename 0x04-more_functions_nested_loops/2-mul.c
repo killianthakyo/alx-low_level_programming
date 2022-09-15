@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * mul - entry point for the program.
- *
- *@c: Integer a passed.
- *@b: Integer b passed.
- *
+ * mul - multiplies two integers
+ *@a: number being tested
+ *@b: number being tested
  * Return: Always 0.
  */
 int mul(int a, int b)
