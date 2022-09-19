@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - entry point for the program.
- *
+ * @n: A pointer Parameter passed from main
  *
  * Return: void
  */
