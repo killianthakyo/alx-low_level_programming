@@ -12,9 +12,9 @@
 char *_strcpy(char *dest, char *src)
 {
 	int n = 0, i = 0;
-	
+
 	n = strlen(src);
-	while (i < n)
+	while (i <= n)
 	{
 		dest[i] = src[i];
 		i++;
