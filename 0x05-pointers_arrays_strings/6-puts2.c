@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rev_rev_string - entry point for the program.
+ * puts2 - entry point for the program.
  * @s: A pointer Parameter 1  passed from main
  *
  * Return: void
