@@ -4,7 +4,7 @@
  * string_toupper - reverse array
  * @str: param1
  *
- * Return void
+ * Return:str.
  */
 char *string_toupper(char *str)
 {
