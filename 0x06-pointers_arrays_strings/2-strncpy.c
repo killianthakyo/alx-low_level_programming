@@ -19,11 +19,11 @@ char *_strncpy(char *dest, char *src, int n)
 		if (j < n)
 		{
 			ptr[j] = src[j];
+			i++;
 		}
-		i++;
 	}
-	/*if (i < n)
-		ptr[j] = '\i0';*/
+	if (i < n)
+		ptr[j] = '\0';
 
 
 	return (ptr);
