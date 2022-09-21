@@ -1,30 +1,28 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * *_strncpy - entry point for the program.
- * @dest: A pointer Parameter 1  passed from main
- * @src: A pointer PArameter 2 passed from main
- * @n: Number of bytes to allocate
+ * _strncpy - copie the string
+ * @dest: array that returns
+ * @src: the pointer that receive the string
+ * @n: times to interate
  *
- * Return: dest as a pointer
+ * Return: the parameter dest.
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *ptr = dest;
-	int i = 0, j;
+	int i;
 
-	for (j = 0; src[j] != '\0'; j++)
+	i = 0;
+	while (i < n && src[i] != '\0')
 	{
-		if (j < n)
-		{
-			ptr[j] = src[j];
-			i++;
-		}
+		dest[i] = src[i];
+		i++;
 	}
-	if (i < n)
-		ptr[j] = '\0';
 
-
-	return (ptr);
+	i = i;
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }
