@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * *_strcat - entry point for the program.
@@ -10,18 +11,19 @@
 char *_strcat(char *dest, char *src)
 {
 	char *ptr = dest;
-	int i, n, fcounter = 0;
+	int i = 0, n;
 
-	for (i = 0; dest[i] < '\0'; i++)
+	while (dest[i] != '\0')
 	{
-		ptr[i] = dest[i];
-		fcounter++;
+		i++;
 	}
 
-	for (n = 0; src[n] == '\0'; n++)
+	for (n = 0; src[n] != '\0'; n++)
 	{
-		ptr[fcounter + n] = src[n];
+		ptr[i] = src[n];
+		i++;
 	}
+	ptr[i] = '\0';
 
 	return (ptr);
 }
