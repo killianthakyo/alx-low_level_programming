@@ -22,8 +22,8 @@ char *_strncpy(char *dest, char *src, int n)
 		}
 		i++;
 	}
-	if (i < n)
-		ptr[j] = '\0';
+	/*if (i < n)
+		ptr[j] = '\i0';*/
 
 
 	return (ptr);
