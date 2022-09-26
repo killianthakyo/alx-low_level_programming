@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * memset - Entry point to the function
+ * _memset - Entry point to the function
  * @s: buffer the address of memory to assign
  * @b: constant byte
- * @n the number of indexed to fill
+ * @n: the number of indexed to fill
  *
- * Return s -  A pointer to the memory area s.
+ * Return: , a pointer to the memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -17,5 +17,5 @@ char *_memset(char *s, char b, unsigned int n)
 		s[i] = b;
 	}
 
-	return(s);
+	return (s);
 }
