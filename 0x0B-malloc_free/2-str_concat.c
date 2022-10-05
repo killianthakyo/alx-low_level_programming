@@ -2,90 +2,49 @@
 #include <stdlib.h>
 
 /**
- * _strlen - give the length of a string
- * @s: the string
+ * str_concat - a function that concatenates two strings.
  *
- * Return: the length of a string
- */
-int _strlen(char *s)
-{
-	int i;
-
-	for (i = 0 ; s[i] != '\0' ; i++)
-		;
-	return (i);
-}
-
-/**
- * _strcat - concatenates two strings
- * @dest: input parameter string
- * @src: input parameter string
+ * @s1: input to string 1
+ * @s2: input to string 2
  *
- * Return: dest
- */
-char *_strcat(char *dest, char *src)
-{
-	int a;
-	int b;
+ * Return: NULL on faliure
+*/
 
-	a = 0;
-
-	while (dest[a] != 0)
-	{
-		a++;
-	}
-
-	b = 0;
-
-	while (src[b] != 0)
-	{
-		dest[a] = src[b];
-		a++;
-		b++;
-	}
-	return (dest);
-}
-
-/**
- * str_concat - concatenate to strings
- * @s1: the string to print
- * @s2: the string to print
- *
- * Return: pointer that contains the content of s1 followed by s2
- */
 char *str_concat(char *s1, char *s2)
 {
-	int length;
-	char *space;
+	int a = 0, b = 0;
+	int i, j;
+	char *s;
 
-	if (s1 == '\0')
-	{
+	if (s1 == NULL)
 		s1 = "";
-	}
-	if (s2 == '\0')
-	{
+	if (s2 == NULL)
 		s2 = "";
+
+	/*find length of str1 & str2*/
+	while (s1[a] != '\0')
+		a++;
+	while (s2[b] != '\0')
+		b++;
+
+	/*+1 for our end of string character*/
+	s = malloc((a * sizeof(char)) + ((b + 1) * sizeof(char)));
+
+	if (s == NULL)
+		return (NULL);
+
+	/*add the first string to array s*/
+	for (i = 0; s1[i] != '\0'; i++)
+		s[i] = s1[i];
+	/*add the second string to array s*/
+	for (j = 0; s2[j] != '\0'; j++)
+	{
+		s[i] = s2[j];
+		i++;
 	}
 
-	length = _strlen(s1) + _strlen(s2);
-	if (s1 != '\0' && s2 != '\0')
-	{
-		space = malloc(sizeof(char) * length + 1);
+	/*null terminate our new string*/
+	s[i] = '\0';
 
-		if (space == '\0')
-		{
-			return ('\0');
-		}
-		else
-		{
-			space = _strcat(space, s1);
-			space = _strcat(space, s2);
-		}
-	}
-	else
-	{
-		space = "";
-	}
-	return (space);
-	free(space);
+	return (s);
 }
