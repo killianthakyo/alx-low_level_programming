@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef DOG_H
+#define DOG_H
 /**
  * struct dog - Structure dog
  * @name: DOg's name
@@ -15,4 +15,4 @@ struct dog
 
 
 
-#endif /* MAIN_H */
+#endif /* DOG_H */
